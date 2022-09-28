@@ -1,0 +1,74 @@
+.dashboard{
+    padding: 20px;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.user h4 {
+    margin: 0% 10px;
+}
+.user p {
+    margin: 0% 10px;
+}
+.user-details{
+    padding: 20px 30px;
+    margin-top: 20px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+}
+.user-details h4,p {
+    margin: 0%;
+}
+.break-div{
+    margin-top: 40px;
+}
+.break{
+    padding: 20px 30px;
+    margin-top: 10px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+}
+.break p{
+    padding: 10px;
+    background-color: white;
+    border-radius: 100%;
+    margin: 0%;
+}
+.break p:hover{
+    background-color: rgba(85, 0, 255);
+    color: white;
+}
+.exercise-details{
+    margin-top: 50px;
+}
+.exercise-time, .break-time{
+    padding: 20px 30px;
+    margin-top: 10px;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 14px;
+}
+.dashboard button{
+    width: 100%;
+    margin-top: 40px;
+    background-color: rgba(85, 0, 255);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 14px;
+    border: none;
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "174e13b9-2d54-4b2f-a74d-a77b362d6eadthy",
+        "name": "Dumble",
+        "description": "The dumbbell is a type of exercise equipment used in weight training.",
+        "img": "https://images.unsplash.com/photo-1561729955-89357c733059?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZHVtYmJlbGxzfGVufDB8fDB8fA%3D%3D&w=1000&q=80",
+        "age": "25-30",
+        "time": 50
+    },
+    {
+        "id": "124e13b9-2d54-4b2f-a74d-a77b362d6eadsfg",
+        "name": "Pull Down",
+        "description": " to exert force upon so as to cause or tend to cause motion toward the force",
+        "img": "https://media.istockphoto.com/photos/man-performing-lat-pulldown-at-the-gym-picture-id521472502?k=20&m=521472502&s=612x612&w=0&h=Qhh4yBb1Qa8n8cvRQQL2Ep3DQO7onu6N8uOzRuQgqiA=",
+        "age": "25-30",
+        "time": 30
+    },
+    {
+        "id": "114e13b9-2d54-4b2f-a74d-a77b362d6eadadf",
+        "name": "Cycling",
+        "description": "The health benefits of regular cycling include: increased cardiovascular fitness.",
+        "img": "https://media.istockphoto.com/photos/fitness-machine-at-home-woman-biking-on-indoor-stationary-bike-for-picture-id1221025222?k=20&m=1221025222&s=612x612&w=0&h=ru2sZp8Lgq3AXCCeQ_AEIU2f4S-qklOxgBc3kkWjFt8=",
+        "age": "25-30",
+        "time": 20
+    },
+    {
+        "id": "194e13b9-2d54-4b2f-a74d-a77b362d6eadkug",
+        "name": "Push Up",
+        "description": "The push-up helps to build muscle and improve strength throughout the upper body.",
+        "img": "https://www.dmarge.com/wp-content/uploads/2020/01/push-up-image.jpg",
+        "age": "25-30",
+        "time": 20
+    },
+    {
+        "id": "104e13b9-2d54-4b2f-a74d-a77b362d6eadxfv",
+        "name": "Weight training",
+        "description": "Weight training is a type of strength training that uses weights for resistance.",
+        "img": "https://static01.nyt.com/images/2018/09/18/well/family/sub18weight/sub18weight-superJumbo.jpg",
+        "age": "25-30",
+        "time": 50
+    },
+    {
+        "id": "154e13b9-2d54-4b2f-a74d-a77b362d6eadefr",
+        "name": "Pull-up",
+        "description": "Start with your hands on the bar approximately shoulder-width apart with your palms facing forward.",
+        "img": "https://img.mensxp.com/media/content/2019/Mar/chin-ups-vs-pull-ups-which-one-builds-a-wider-thicker-amp-stronger-back-1200x900-1551449750.jpg",
+        "age": "25-30",
+        "time": 30
+    }
+]
