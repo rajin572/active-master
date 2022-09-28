@@ -1,5 +1,12 @@
 .dashboard{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.user-info{
+    width: 100%;
 }
 .user{
     display: flex;
@@ -45,7 +52,7 @@
     padding: 10px;
     background-color: white;
     border-radius: 100%;
-    margin: 0%;
+    margin: 0% 2px;
 }
 .break p:hover{
     background-color: rgba(85, 0, 255);
@@ -53,6 +60,7 @@
 }
 .exercise-details{
     margin-top: 50px;
+    width: 100%;
 }
 .exercise-time, .break-time{
     padding: 20px 30px;
@@ -71,4 +79,91 @@
     padding: 10px 20px;
     border-radius: 14px;
     border: none;
+}
+@media only screen and (max-width: 768px){
+    .dashboard{
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .user-info{
+        display: none;
+    }
+    .break{
+        padding: 10px 20px;
+    }
+    .break-div{
+        margin-top: 0px;
+    }
+    .exercise-time, .break-time{
+        padding: 10px 20px;
+    }
+    .exercise-details{
+        margin-top: 0px;
+        width: 50%;
+    }
+    .dashboard button{
+        margin-top: 10px;
+        padding: 10px 20px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .dashboard{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .user-info{
+        display: none;
+    }
+    .break-div{
+        margin-top: 0px;
+        text-align: center;
+    }
+    .break{
+        padding: 5px 10px;
+    }
+    .break p{
+        padding: 7px;
+        background-color: white;
+        border-radius: 100%;
+        margin: 0%;
+        font-size: 10px;
+        margin-right: 5px;
+    }
+    .exercise-time, .break-time{
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+    .exercise-time p, .break-time p{
+        margin-right: 5px;
+    }
+    .exercise-details{
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .excercise-box{
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .dashboard button{
+        margin-top: 10px;
+        padding: 5px 10px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .excercise-box{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
 }

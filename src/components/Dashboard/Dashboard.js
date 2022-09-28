@@ -39,16 +39,18 @@ const Dashboard = () => {
             </div>
             <div className='exercise-details'>
                 <h5>Exercise Details</h5>
-                <div className='exercise-time'>
-                    <p>Exercise time</p>
-                    <p><span>0</span> secound</p>
+                <div className="excercise-box">
+                    <div className='exercise-time'>
+                        <p>Exercise time</p>
+                        <p><span>0</span> secound</p>
+                    </div>
+                    <div className='break-time'>
+                        <p>Break time</p>
+                        <p><span>0</span> secound</p>
+                    </div>
                 </div>
-                <div className='break-time'>
-                    <p>Break time</p>
-                    <p><span>0</span> secound</p>
-                </div>
+                <button>Activity Completed</button>
             </div>
-            <button>Activity Completed</button>
         </div>
     );
 };
