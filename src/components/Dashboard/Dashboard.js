@@ -1,7 +1,7 @@
 import React from 'react';
 import './Dashboard.css'
 import userImg from '../../images/user.png'
-const Dashboard = () => {
+const Dashboard = (props) => {
     return (
         <div className='dashboard'>
             <div className="user-info">
@@ -42,7 +42,7 @@ const Dashboard = () => {
                 <div className="excercise-box">
                     <div className='exercise-time'>
                         <p>Exercise time</p>
-                        <p><span>0</span> secound</p>
+                        <p><span>{props.time}</span> secound</p>
                     </div>
                     <div className='break-time'>
                         <p>Break time</p>

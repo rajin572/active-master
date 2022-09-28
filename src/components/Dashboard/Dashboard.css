@@ -53,6 +53,7 @@
     background-color: white;
     border-radius: 100%;
     margin: 0% 2px;
+    cursor: pointer;
 }
 .break p:hover{
     background-color: rgba(85, 0, 255);

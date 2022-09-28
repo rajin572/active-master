@@ -2,7 +2,8 @@ import React from 'react';
 import './Equipment.css'
 
 const Equipment = (props) => {
-    const {img,name,description,age,time} = props.equipment;
+    const {handeler,equipment} = props
+    const {img,name,description,age,time} = equipment;
     return (
         <div className='eqipment'>
         <img src={img} alt="" />
@@ -12,7 +13,7 @@ const Equipment = (props) => {
             <p>For Age: <b>{age}</b></p>
             <p>Time required: <b>{time}</b>s</p>
         </div>
-        <button>Add to Cart</button>
+        <button onClick={()=>handeler(time)}>Add to Cart</button>
     </div>
     );
 };
