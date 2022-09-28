@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Dashboard.css'
 import userImg from '../../images/user.png'
+import { addToDb, showToWeb } from '../../utilities/fakedb';
 const Dashboard = (props) => {
+    const[breakTime, setBreakTime] = useState(0);
+    useEffect(() => {
+        const data = showToWeb();
+        setBreakTime(data)
+    },[])
+    const addToBreakTime = (value) =>{
+        setBreakTime(value)
+        addToDb(value)
+    }
     return (
         <div className='dashboard'>
             <div className="user-info">
@@ -30,11 +40,11 @@ const Dashboard = (props) => {
             <div className='break-div'>
                 <h5>Add A Break</h5>
                 <div className='break'>
-                    <p><span>10</span>s</p>
-                    <p><span>20</span>s</p>
-                    <p><span>30</span>s</p>
-                    <p><span>40</span>s</p>
-                    <p><span>50</span>s</p>
+                    <p onClick={()=>addToBreakTime(10)}><span>10</span>s</p>
+                    <p onClick={()=>addToBreakTime(20)}><span>20</span>s</p>
+                    <p onClick={()=>addToBreakTime(30)}><span>30</span>s</p>
+                    <p onClick={()=>addToBreakTime(40)}><span>40</span>s</p>
+                    <p onClick={()=>addToBreakTime(50)}><span>50</span>s</p>
                 </div>
             </div>
             <div className='exercise-details'>
@@ -46,7 +56,7 @@ const Dashboard = (props) => {
                     </div>
                     <div className='break-time'>
                         <p>Break time</p>
-                        <p><span>0</span> secound</p>
+                        <p><span>{breakTime}</span> secound</p>
                     </div>
                 </div>
                 <button>Activity Completed</button>
