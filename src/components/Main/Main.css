@@ -1,8 +1,8 @@
 .main-container{
     width: 100%;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    position: relative;
+    display: flex;
+    /* grid-template-columns: 3fr 1fr;
+    position: relative; */
 }
 .equipment-container{
     display: grid;
@@ -10,10 +10,54 @@
     grid-gap: 20px;
     padding:100px 100px;
     background-color: rgb(240, 240, 240);
+    flex-grow: 3;
 }
 .dashboard-container{
     background-color: rgb(255, 255, 255);
-    height: 100vh;
+    /* height: 100vh; */
     position: sticky;
     top: 0%;
+}
+@media only screen and (max-width: 1235px){
+    .equipment-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        padding:100px 30px;
+        background-color: rgb(240, 240, 240);
+    }
+}
+@media only screen and (max-width: 993px){
+    .equipment-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding:100px 30px;
+        background-color: rgb(240, 240, 240);
+    }
+}
+@media only screen and (max-width: 768px){
+    .main-container{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .equipment-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        padding:100px 30px;
+        background-color: rgb(240, 240, 240);
+    }
+}
+@media only screen and (max-width: 600px){
+    .equipment-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        padding:100px 30px;
+        background-color: rgb(240, 240, 240);
+    }
+    .dashboard-container{
+        background-color: rgb(255, 255, 255);
+    }
 }
