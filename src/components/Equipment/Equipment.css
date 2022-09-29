@@ -1,6 +1,6 @@
 .eqipment {
     border: 1px solid rgba(149, 160, 167, 0.5);
-    box-shadow: 0px 1px 3px #95A0A7;
+    box-shadow: 0px 1px 3px rgb(149, 160, 167);
     border-radius: 5px;
     padding: 15px;
     background-color: #ffffff;
@@ -17,7 +17,7 @@
     border-radius: 5px;
 }
 .description {
-color: #95A0A7;
+color: rgb(149, 160, 167);
 margin-top: 10px;
 font-size: 15px;
 }
@@ -26,9 +26,6 @@ color: #000000;
 }
 
 .eqipment button {
-    /* position: absolute;
-    bottom: 15px;
-    right: 15px; */
     background-color: rgba(85, 0, 255, 0.803);
     color: white;
     width: 100%;
