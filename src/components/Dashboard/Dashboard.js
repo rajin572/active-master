@@ -8,11 +8,21 @@ const Dashboard = (props) => {
     const[breakTime, setBreakTime] = useState(0);
     useEffect(() => {
         const data = showToWeb();
-        setBreakTime(data)
+        if(data){
+            setBreakTime(data)
+        }
+        else{
+            setBreakTime(0)
+        }
+        
     },[])
     const addToBreakTime = (value) =>{
         setBreakTime(value)
-        addToDb(value)
+        // addToDb(value)
+        const add = addToDb(value);
+        if (add) {
+            console.log('add');
+        }
     }
     const notify = () => toast.success("Your All Activity has completed");
     return (
