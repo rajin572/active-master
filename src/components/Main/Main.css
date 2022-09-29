@@ -2,38 +2,48 @@
     width: 100%;
     display: flex;
 }
+.container{
+    padding:100px 100px;
+    background-color: rgb(240, 240, 240);
+}
+.container h2{
+    margin-bottom: 50px;
+}
 .equipment-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: flex-start;
     grid-gap: 20px;
-    padding:100px 100px;
-    background-color: rgb(240, 240, 240);
     flex-grow: 3;
 }
 .dashboard-container{
     background-color: rgb(255, 255, 255);
 }
 @media only screen and (max-width: 1235px){
+    .container{
+        padding:100px 30px;
+    }
     .equipment-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
-        padding:100px 30px;
-        background-color: rgb(240, 240, 240);
     }
 }
 @media only screen and (max-width: 993px){
+    .container{
+        padding:100px 30px;
+    }
     .equipment-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-        padding:100px 30px;
-        background-color: rgb(240, 240, 240);
     }
 }
 @media only screen and (max-width: 768px){
+    .container{
+        padding:100px 10px;
+    }
     .main-container{
         width: 100%;
         flex-direction: column-reverse;
@@ -42,16 +52,20 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
-        padding:100px 30px;
-        background-color: rgb(240, 240, 240);
+    }
+    .dashboard-container{
+        background-color: rgb(255, 255, 255);
+        border-bottom: 2px solid rgb(144, 0, 255);
     }
 }
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 668px){
+    .container{
+        padding:100px 30px;
+    }
     .equipment-container{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
-        padding:100px 30px;
         background-color: rgb(240, 240, 240);
     }
 }

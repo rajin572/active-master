@@ -5,7 +5,7 @@ const Equipment = (props) => {
     const {handeler,equipment} = props
     const {img,name,description,age,time} = equipment;
     return (
-        <div className='eqipment'>
+    <div className='eqipment'>
         <img src={img} alt="" />
         <div>
             <h4>{name}</h4>

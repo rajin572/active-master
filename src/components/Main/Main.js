@@ -16,7 +16,9 @@ const Main = () => {
     }
   return (
     <div className="main-container">
-      <div className="equipment-container">
+      <div className="container">
+        <h2>Select todays exercise</h2>
+        <div className="equipment-container">
         {
         equipments.map((equipment) => (
           <Equipment
@@ -26,6 +28,7 @@ const Main = () => {
           ></Equipment>
         ))
         }
+        </div>
       </div>
       <div className="dashboard-container">
         <Dashboard time={time}></Dashboard>
