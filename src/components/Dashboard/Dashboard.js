@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './Dashboard.css'
 import userImg from '../../images/user.png'
 import { addToDb, showToWeb } from '../../utilities/fakedb';
@@ -12,6 +14,7 @@ const Dashboard = (props) => {
         setBreakTime(value)
         addToDb(value)
     }
+    const notify = () => toast.success("Your All Activity has completed");
     return (
         <div className='dashboard'>
             <div className="user-info">
@@ -59,7 +62,8 @@ const Dashboard = (props) => {
                         <p><span>{breakTime}</span> secound</p>
                     </div>
                 </div>
-                <button>Activity Completed</button>
+                <button onClick={notify}>Activity Completed</button>
+                <ToastContainer />
             </div>
         </div>
     );
