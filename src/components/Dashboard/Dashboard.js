@@ -6,7 +6,7 @@ import userImg from '../../images/user.png'
 import { addToDb, showToWeb } from '../../utilities/fakedb';
 const Dashboard = (props) => {
     const {time} = props;
-    
+
     const[breakTime, setBreakTime] = useState(0);
     useEffect(() => {
         const data = showToWeb();
@@ -28,7 +28,8 @@ const Dashboard = (props) => {
     }
     const notify = () => toast.success("Your All Activity has completed");
     return (
-        <div className='dashboard'>
+        <div>
+                    <div className='dashboard'>
             <div className="user-info">
                 <div className='user'>
                     <img src={userImg} alt="" />
@@ -39,7 +40,7 @@ const Dashboard = (props) => {
                 </div>
                 <div className='user-details'>
                     <div>
-                        <h4><b>75</b>kg</h4>
+                        <h4><b>65</b>kg</h4>
                         <p>Weight</p>
                     </div>
                     <div>
@@ -75,8 +76,9 @@ const Dashboard = (props) => {
                     </div>
                 </div>
                 <button onClick={notify}>Activity Completed</button>
-                <ToastContainer />
             </div>
+        </div>
+            <ToastContainer />
         </div>
     );
 };

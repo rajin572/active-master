@@ -19,7 +19,7 @@ const Main = () => {
     <div>
       <div className="main-container">
       <div className="container">
-        <h2>Select todays Warm-Up</h2>
+        <h2>Select todays Warm Up</h2>
         <div className="equipment-container">
         {
         equipments.map((equipment) => (
