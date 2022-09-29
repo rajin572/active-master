@@ -13,7 +13,7 @@ const Equipment = (props) => {
             <p>For Age: <b>{age}</b></p>
             <p>Time required: <b>{time}</b>s</p>
         </div>
-        <button onClick={()=>handeler(time)}>Add to Cart</button>
+        <button onClick={()=>handeler(time)}>Add to List</button>
     </div>
     );
 };

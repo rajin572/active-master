@@ -1,5 +1,6 @@
 .question{
     background-color: aliceblue;
+    border-top: 5px solid black;
 }
 h1 {
     text-align: center;

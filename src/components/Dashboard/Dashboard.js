@@ -5,6 +5,8 @@ import './Dashboard.css'
 import userImg from '../../images/user.png'
 import { addToDb, showToWeb } from '../../utilities/fakedb';
 const Dashboard = (props) => {
+    const {time} = props;
+    
     const[breakTime, setBreakTime] = useState(0);
     useEffect(() => {
         const data = showToWeb();
@@ -65,7 +67,7 @@ const Dashboard = (props) => {
                 <div className="excercise-box">
                     <div className='exercise-time'>
                         <p>Exercise time</p>
-                        <p><span>{props.time}</span> secound</p>
+                        <p><span>{time}</span> secound</p>
                     </div>
                     <div className='break-time'>
                         <p>Break time</p>
