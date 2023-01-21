@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className='footer'>
-            Copyright 2022 Active Care
+            Copyright 2022 @Active Care
         </div>
     );
 };
