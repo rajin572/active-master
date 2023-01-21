@@ -1,3 +1,7 @@
 *{
   box-sizing: border-box;
 }
+*::selection{
+  background-color: rgb(50, 50, 50);
+  color: #f3f3f3;
+}

@@ -1,9 +1,10 @@
 .main-container{
     width: 100%;
     display: flex;
+    justify-content: space-between;
 }
 .container{
-    padding:100px 100px;
+    padding:100px 50px;
     background-color: rgb(240, 240, 240);
 }
 .container h2{
@@ -12,15 +13,16 @@
 .equipment-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: flex-start;
     grid-gap: 20px;
     flex-grow: 3;
 }
 .dashboard-container{
+    height: 100Vh;
+    position: sticky;
+    top: 0;
     background-color: rgb(255, 255, 255);
 }
-@media only screen and (max-width: 1235px){
+@media only screen and (max-width: 1200px){
     .container{
         padding:100px 30px;
     }
@@ -45,15 +47,16 @@
         padding:100px 10px;
     }
     .main-container{
-        width: 100%;
         flex-direction: column-reverse;
     }
     .equipment-container{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
+        grid-gap: 10px;
     }
     .dashboard-container{
+        height: auto;
+        position: static;
         background-color: rgb(255, 255, 255);
         border-bottom: 2px solid rgb(144, 0, 255);
     }

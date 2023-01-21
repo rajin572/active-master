@@ -46,5 +46,53 @@
         "img": "https://img.mensxp.com/media/content/2019/Mar/chin-ups-vs-pull-ups-which-one-builds-a-wider-thicker-amp-stronger-back-1200x900-1551449750.jpg",
         "age": "20-40",
         "time": 30
+    },
+    {
+        "id": "18le13b9-2d54-4b2f-a74d-a77b362d6eadevdvd",
+        "name": "Bench press",
+        "description": "The bench press is a compound exercise that targets the muscles of the upper body.",
+        "img": "https://physicalculturestudy.com/wp-content/uploads/2015/04/bench-press_0.jpg?w=300",
+        "age": "25-40",
+        "time": 50
+    },
+    {
+        "id": "1114e13b9-2d54-4b2f-a74d-a77b362d6eadefrddv",
+        "name": "Treadmill",
+        "description": "A treadmill is a piece of exercise equipment that has a belt that loops around, driven by a motor.",
+        "img": "https://media.istockphoto.com/photos/young-man-running-on-a-treadmill-at-home-picture-id1172191646?k=20&m=1172191646&s=612x612&w=0&h=gyC3TlLxIXR_AsIqBpr7Io_WvR45CGiwxALB7Bo-hJI=",
+        "age": "20-50",
+        "time": 30
+    },
+    {
+        "id": "125854e13b9-2d54-4b2f-a74d-a77b362d6eadefrouiyi",
+        "name": "Squat",
+        "description": "Start with your hands on the bar approximately shoulder-width apart ",
+        "img": "https://media.istockphoto.com/photos/get-your-squat-on-picture-id1072392408?k=20&m=1072392408&s=612x612&w=0&h=zYfnAtbBqakGWyLvRQK_xZqkhDV3MVinrFVH_K_lit8=",
+        "age": "20-50",
+        "time": 30
+    },
+    {
+        "id": "125457573b9-2d54-4b2f-a74d-a77b362vdfdfadefrouiyi",
+        "name": "Jump rope",
+        "description": "Basic jumping rope involves a rope held by one end in each hand that is then spun over the head and back to the feet.",
+        "img": "https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/04/jump-rope-1296x728-header.jpg?w=1155&h=1528",
+        "age": "20-50",
+        "time": 30
+    },
+    {
+        "id": "125854e13b9-254-4b2f-a74d-a77befrouiyi",
+        "name": "Deadlift",
+        "description": "The deadlift is a weight training exercise in which a loaded barbell or bar is lifted off the ground to the level of the hips, torso perpendicular to the floor, before being placed back on the ground.",
+        "img": "https://media.istockphoto.com/photos/strong-man-doing-deadlift-training-in-gym-picture-id838386570?k=20&m=838386570&s=612x612&w=0&h=z-E8xcyYbaRtRe6_140ns8kAInc0g0SWpY7H7NwJfwc=",
+        "age": "20-40",
+        "time": 30
+    },
+    {
+        "id": "125854eb9-2d54-4b2f-a74d-a77b362d6ouiyi",
+        "name": "Calf raises",
+        "description": "Exercises don't come much simpler than the calf raise. Stand up straight, then push through the balls of your feet and raise your heel until you are standing on your toes. Then lower slowly back to the start.",
+        "img": "https://cdn.muscleandstrength.com/sites/default/files/seated-calf-raise-1.jpg",
+        "age": "20-40",
+        "time": 50
     }
 ]

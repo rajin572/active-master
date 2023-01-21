@@ -29,7 +29,7 @@ const Dashboard = (props) => {
     const notify = () => toast.success("Your All Activity has completed");
     return (
         <div>
-                    <div className='dashboard'>
+            <div className='dashboard'>
             <div className="user-info">
                 <div className='user'>
                     <img src={userImg} alt="" />
@@ -53,29 +53,31 @@ const Dashboard = (props) => {
                     </div>
                 </div>
             </div>
-            <div className='break-div'>
-                <h5>Add A Break</h5>
-                <div className='break'>
-                    <p onClick={()=>addToBreakTime(10)}><span>10</span>s</p>
-                    <p onClick={()=>addToBreakTime(20)}><span>20</span>s</p>
-                    <p onClick={()=>addToBreakTime(30)}><span>30</span>s</p>
-                    <p onClick={()=>addToBreakTime(40)}><span>40</span>s</p>
-                    <p onClick={()=>addToBreakTime(50)}><span>50</span>s</p>
-                </div>
-            </div>
-            <div className='exercise-details'>
-                <h5>Exercise Details</h5>
-                <div className="excercise-box">
-                    <div className='exercise-time'>
-                        <p>Exercise time</p>
-                        <p><span>{time}</span> secound</p>
-                    </div>
-                    <div className='break-time'>
-                        <p>Break time</p>
-                        <p><span>{breakTime}</span> secound</p>
+            <div className="otherDetils">
+                <div className='break-div'>
+                    <h5>Add A Break</h5>
+                    <div className='break'>
+                        <p onClick={()=>addToBreakTime(10)}><span>10</span>s</p>
+                        <p onClick={()=>addToBreakTime(20)}><span>20</span>s</p>
+                        <p onClick={()=>addToBreakTime(30)}><span>30</span>s</p>
+                        <p onClick={()=>addToBreakTime(40)}><span>40</span>s</p>
+                        <p onClick={()=>addToBreakTime(50)}><span>50</span>s</p>
                     </div>
                 </div>
-                <button onClick={notify}>Activity Completed</button>
+                <div className='exercise-details'>
+                    <h5>Exercise Details</h5>
+                    <div className="excercise-box">
+                        <div className='exercise-time'>
+                            <p>Exercise time</p>
+                            <p><span>{time}</span> secound</p>
+                        </div>
+                        <div className='break-time'>
+                            <p>Break time</p>
+                            <p><span>{breakTime}</span> secound</p>
+                        </div>
+                    </div>
+                    <button onClick={notify}>Activity Completed</button>
+                </div>
             </div>
         </div>
             <ToastContainer />

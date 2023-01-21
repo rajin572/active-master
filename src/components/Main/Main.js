@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Dashboard from "../Dashboard/Dashboard";
 import Equipment from "../Equipment/Equipment";
-import Question from "../Question/Question";
 import "./Main.css";
 const Main = () => {
     const [equipments, setequipments] = useState([]);
@@ -36,7 +35,6 @@ const Main = () => {
         <Dashboard time={time}></Dashboard>
       </div>
     </div>
-    <Question></Question>
     </div>
   );
 };

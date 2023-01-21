@@ -6,14 +6,18 @@ const Equipment = (props) => {
     const {img,name,description,age,time} = equipment;
     return (
     <div className='eqipment'>
-        <img src={img} alt="" />
-        <div>
-            <h4>{name}</h4>
-            <p className='description'><b>Description:</b> {description}</p>
-            <p>For Age: <b>{age}</b></p>
-            <p>Time required: <b>{time}</b>s</p>
+        <div className="eqipmentInfo">
+            <img src={img} alt="" />
+            <div className='eqipmentDetails'>
+                <h4>{name}</h4>
+                <p className='description'><b>Description:</b> {description}</p>
+                <p>For Age: <b>{age}</b></p>
+                <p>Time required: <b>{time}</b>s</p>
+            </div>
         </div>
-        <button onClick={()=>handeler(time)}>Add to List</button>
+        <div className="eqipmentButton">
+            <button onClick={()=>handeler(time)}>Add to List</button>
+        </div>
     </div>
     );
 };

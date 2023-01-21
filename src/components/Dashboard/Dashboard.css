@@ -26,7 +26,7 @@
 }
 .user-details{
     padding: 20px 30px;
-    margin-top: 20px;
+    margin-top: 10px;
     background-color: rgb(235, 235, 235);
     display: flex;
     justify-content: space-between;
@@ -37,14 +37,14 @@
     margin: 0%;
 }
 .break-div{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .break{
-    padding: 20px 30px;
+    padding: 15px 20px;
     margin-top: 10px;
     background-color: rgb(235, 235, 235);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     border-radius: 14px;
 }
@@ -60,7 +60,7 @@
     color: white;
 }
 .exercise-details{
-    margin-top: 50px;
+    margin-top: 20px;
     width: 100%;
 }
 .exercise-time, .break-time{
@@ -74,21 +74,60 @@
 }
 .dashboard button{
     width: 100%;
-    margin-top: 40px;
+    margin-top: 20px;
     background-color: rgb(34, 0, 255);
     color: white;
     padding: 10px 20px;
     border-radius: 14px;
     border: none;
 }
+@media only screen and (max-width: 1200px){
+    .dashboard{
+        padding: 15px;
+    }
+    .user img{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+    }
+    .user h4 {
+        font-size: 20px;
+    }
+    .user p {
+        font-size: 15px;
+    }
+    .user-details{
+        padding: 10px 15px;
+    }
+    .user-details h4{
+        font-size: 20px;
+    }
+    .user-details p{
+        font-size: 15px;
+    }
+    .break{
+        padding: 10px 10px;
+    }
+    .break p{
+        font-size: 15px;
+    }
+    .exercise-time, .break-time{
+        padding: 10px 20px;
+    }
+}
 @media only screen and (max-width: 768px){
     .dashboard{
         padding: 10px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
-    .user-info{
-        display: none;
+    .otherDetils{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin-top: 20px;
+        width: 100%;
     }
     .break{
         padding: 10px 20px;
@@ -103,6 +142,13 @@
         margin-top: 0px;
         width: 50%;
     }
+    .excercise-box{
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
     .dashboard button{
         margin-top: 10px;
         padding: 10px 20px;
@@ -115,6 +161,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .otherDetils{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: center; */
+        margin-top: 20px;
+        width: 100%;
     }
     .user-info{
         display: block;
